@@ -498,6 +498,13 @@ Potential enhancements include:
 * Export Reports (CSV/PDF)
 * Plugin System
 
+# Future Scope
+
+- VS Code Extension
+- GitHub Action Integration
+- Electron Desktop Application
+- CI/CD Security Pipeline
+- AI-Powered Vulnerability Explanations
 ---
 
 # Author
