@@ -165,7 +165,7 @@ DevVirus/
 Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Nitin-bhatt46/DevVirus.git
 ```
 
 Move into the project:
