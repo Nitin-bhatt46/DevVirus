@@ -1,0 +1,114 @@
+{
+  "timestamp": "2026-06-21T04:19:52.992Z",
+  "systemInfo": {
+    "os": "Windows_NT",
+    "architecture": "x64",
+    "hostname": "DESKTOP-95T1DEA",
+    "platform": "win32",
+    "homeDirectory": "C:\\Users\\Nitin"
+  },
+  "environmentInfo": {
+    "nodeVersion": "v24.14.0",
+    "envMode": "production",
+    "execPath": "C:\\Program Files\\nodejs\\node.exe"
+  },
+  "projectAnalysis": {
+    "totalFiles": 8,
+    "totalFolders": 2,
+    "largestFile": {
+      "name": "payload.js",
+      "path": "C:\\Users\\Nitin\\Desktop\\DevVirus\\tests\\mock_project\\payload.js",
+      "size": 288
+    },
+    "extensionStats": {
+      "no-extension": 1,
+      ".js": 7
+    }
+  },
+  "mutationHistory": [
+    {
+      "timestamp": "2026-06-21T04:17:55.997Z",
+      "operation": "CREATE",
+      "file": "C:\\Users\\Nitin\\Desktop\\DevVirus\\tests\\mock_project\\crud_test_file.txt",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2026-06-21T04:17:55.998Z",
+      "operation": "CREATE",
+      "file": "C:\\Users\\Nitin\\Desktop\\DevVirus\\tests\\mock_project\\crud_test_file.txt",
+      "status": "FAILED"
+    },
+    {
+      "timestamp": "2026-06-21T04:17:56.000Z",
+      "operation": "READ",
+      "file": "C:\\Users\\Nitin\\Desktop\\DevVirus\\tests\\mock_project\\crud_test_file.txt",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2026-06-21T04:17:56.001Z",
+      "operation": "UPDATE",
+      "file": "C:\\Users\\Nitin\\Desktop\\DevVirus\\tests\\mock_project\\crud_test_file.txt",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2026-06-21T04:17:56.003Z",
+      "operation": "READ",
+      "file": "C:\\Users\\Nitin\\Desktop\\DevVirus\\tests\\mock_project\\crud_test_file.txt",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2026-06-21T04:17:56.004Z",
+      "operation": "DELETE",
+      "file": "C:\\Users\\Nitin\\Desktop\\DevVirus\\tests\\mock_project\\crud_test_file.txt",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2026-06-21T04:17:56.005Z",
+      "operation": "READ",
+      "file": "C:\\Users\\Nitin\\Desktop\\DevVirus\\tests\\mock_project\\crud_test_file.txt",
+      "status": "FAILED"
+    },
+    {
+      "timestamp": "2026-06-21T04:19:45.594Z",
+      "operation": "CREATE",
+      "file": "C:\\Users\\Nitin\\Desktop\\DevVirus\\tests\\mock_project\\crud_test_file.txt",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2026-06-21T04:19:45.595Z",
+      "operation": "CREATE",
+      "file": "C:\\Users\\Nitin\\Desktop\\DevVirus\\tests\\mock_project\\crud_test_file.txt",
+      "status": "FAILED"
+    },
+    {
+      "timestamp": "2026-06-21T04:19:45.597Z",
+      "operation": "READ",
+      "file": "C:\\Users\\Nitin\\Desktop\\DevVirus\\tests\\mock_project\\crud_test_file.txt",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2026-06-21T04:19:45.598Z",
+      "operation": "UPDATE",
+      "file": "C:\\Users\\Nitin\\Desktop\\DevVirus\\tests\\mock_project\\crud_test_file.txt",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2026-06-21T04:19:45.599Z",
+      "operation": "READ",
+      "file": "C:\\Users\\Nitin\\Desktop\\DevVirus\\tests\\mock_project\\crud_test_file.txt",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2026-06-21T04:19:45.601Z",
+      "operation": "DELETE",
+      "file": "C:\\Users\\Nitin\\Desktop\\DevVirus\\tests\\mock_project\\crud_test_file.txt",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2026-06-21T04:19:45.602Z",
+      "operation": "READ",
+      "file": "C:\\Users\\Nitin\\Desktop\\DevVirus\\tests\\mock_project\\crud_test_file.txt",
+      "status": "FAILED"
+    }
+  ]
+}

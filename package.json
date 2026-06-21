@@ -1,0 +1,24 @@
+{
+  "name": "devvirus",
+  "version": "1.0.0",
+  "description": "Developer-focused security scanner and vulnerability CLI tool.",
+  "main": "src/index.js",
+  "bin": {
+    "devvirus": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node tests/run.js"
+  },
+  "keywords": [
+    "security",
+    "scanner",
+    "vulnerability",
+    "cli",
+    "linter",
+    "secrets"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

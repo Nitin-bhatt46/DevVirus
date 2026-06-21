@@ -1,0 +1,119 @@
+{
+  "scanDate": "21/6/2026, 9:49:45 am",
+  "targetDirectory": "C:\\Users\\Nitin\\Desktop\\DevVirus\\tests\\mock_project",
+  "scannedFiles": 7,
+  "systemInfo": {
+    "os": "Windows_NT",
+    "architecture": "x64",
+    "hostname": "DESKTOP-95T1DEA",
+    "platform": "win32",
+    "homeDirectory": "C:\\Users\\Nitin",
+    "nodeVersion": "v24.14.0",
+    "envMode": "production"
+  },
+  "projectInfo": {
+    "totalFiles": 8,
+    "totalFolders": 2,
+    "largestFile": {
+      "name": "payload.js",
+      "path": "C:\\Users\\Nitin\\Desktop\\DevVirus\\tests\\mock_project\\payload.js",
+      "size": 288
+    },
+    "extensionStats": {
+      "no-extension": 1,
+      ".js": 7
+    }
+  },
+  "findings": [
+    {
+      "ruleId": "DV-004",
+      "ruleName": "Weak Cryptography",
+      "severity": "medium",
+      "description": "Detects weak hash algorithms like MD5 or SHA1 which are vulnerable to collision attacks.",
+      "filePath": "C:\\Users\\Nitin\\Desktop\\DevVirus\\tests\\mock_project\\crypto_weak.js",
+      "lineNumber": 3,
+      "matchedText": "createHash('md5')",
+      "lineContent": "const md5Hash = crypto.createHash('md5').update('data').digest('hex');"
+    },
+    {
+      "ruleId": "DV-004",
+      "ruleName": "Weak Cryptography",
+      "severity": "medium",
+      "description": "Detects weak hash algorithms like MD5 or SHA1 which are vulnerable to collision attacks.",
+      "filePath": "C:\\Users\\Nitin\\Desktop\\DevVirus\\tests\\mock_project\\crypto_weak.js",
+      "lineNumber": 4,
+      "matchedText": "createHash('sha1')",
+      "lineContent": "const sha1Hash = crypto.createHash('sha1').update('data').digest('hex');"
+    },
+    {
+      "ruleId": "DV-002",
+      "ruleName": "Dangerous Code Execution",
+      "severity": "critical",
+      "description": "Detects usage of eval() or new Function() which can lead to arbitrary code execution.",
+      "filePath": "C:\\Users\\Nitin\\Desktop\\DevVirus\\tests\\mock_project\\danger_eval.js",
+      "lineNumber": 3,
+      "matchedText": "eval(",
+      "lineContent": "return eval(\"(\" + data + \")\");"
+    },
+    {
+      "ruleId": "DV-002",
+      "ruleName": "Dangerous Code Execution",
+      "severity": "critical",
+      "description": "Detects usage of eval() or new Function() which can lead to arbitrary code execution.",
+      "filePath": "C:\\Users\\Nitin\\Desktop\\DevVirus\\tests\\mock_project\\danger_eval.js",
+      "lineNumber": 5,
+      "matchedText": "new Function(",
+      "lineContent": "const creator = new Function('a', 'b', 'return a + b');"
+    },
+    {
+      "ruleId": "DV-003",
+      "ruleName": "Insecure Command Execution",
+      "severity": "medium",
+      "description": "Detects command execution functions which may be vulnerable to command injection.",
+      "filePath": "C:\\Users\\Nitin\\Desktop\\DevVirus\\tests\\mock_project\\exec_cmd.js",
+      "lineNumber": 3,
+      "matchedText": ".exec(",
+      "lineContent": "cp.exec('ping ' + host, (err, out) => {"
+    },
+    {
+      "ruleId": "DV-003",
+      "ruleName": "Insecure Command Execution",
+      "severity": "medium",
+      "description": "Detects command execution functions which may be vulnerable to command injection.",
+      "filePath": "C:\\Users\\Nitin\\Desktop\\DevVirus\\tests\\mock_project\\exec_cmd.js",
+      "lineNumber": 6,
+      "matchedText": ".execSync(",
+      "lineContent": "const val = cp.execSync('whoami');"
+    },
+    {
+      "ruleId": "DV-006",
+      "ruleName": "Obfuscated / Large Payload",
+      "severity": "low",
+      "description": "Detects extremely long base64 or hex sequences often used to hide malicious payloads.",
+      "filePath": "C:\\Users\\Nitin\\Desktop\\DevVirus\\tests\\mock_project\\payload.js",
+      "lineNumber": 2,
+      "matchedText": "\"dGhpcyBpcyBhIHZlcnkgbG9uZyBiYXNlNjQgc3RyaW5nIHRoYXQgc2hvdWxkIGJlIGZsYWdnZWQgYXMgYSBwb3RlbnRpYWwgbWFsaWNpb3VzIHBheWxvYWQgYmVjYXVzZSBpdCBleGNlZWRzIHRoZSBkZWZhdWx0IDIwMCBjaGFyYWN0ZXIgbGltaXQgYW5kIGNvbnRhaW5zIHJhbmRvbSBsb29raW5nIGJpbmFyeSBkYXRh\"",
+      "lineContent": "const secretPayload = \"dGhpcyBpcyBhIHZlcnkgbG9uZyBiYXNlNjQgc3RyaW5nIHRoYXQgc2hvdWxkIGJlIGZsYWdnZWQgYXMgYSBwb3RlbnRpYWwgbWFsaWNpb3VzIHBheWxvYWQgYmVjYXVzZSBpdCBleGNlZWRzIHRoZSBkZWZhdWx0IDIwMCBjaGFyYWN0ZXIgbGltaXQgYW5kIGNvbnRhaW5zIHJhbmRvbSBsb29raW5nIGJpbmFyeSBkYXRh\";"
+    },
+    {
+      "ruleId": "DV-005",
+      "ruleName": "Insecure File Permissions",
+      "severity": "high",
+      "description": "Detects dangerous file permissions (e.g., chmod 777) making files globally readable/writable/executable.",
+      "filePath": "C:\\Users\\Nitin\\Desktop\\DevVirus\\tests\\mock_project\\permissions.js",
+      "lineNumber": 3,
+      "matchedText": "chmodSync('config.json', '777')",
+      "lineContent": "fs.chmodSync('config.json', '777');"
+    },
+    {
+      "ruleId": "DV-001",
+      "ruleName": "Hardcoded API Secret",
+      "severity": "high",
+      "description": "Detects potential hardcoded credentials, API keys, client secrets, and auth tokens.",
+      "filePath": "C:\\Users\\Nitin\\Desktop\\DevVirus\\tests\\mock_project\\secrets.js",
+      "lineNumber": 2,
+      "matchedText": "api_key = \"AIzaSyD-xyz1234567890abcdefghij\"",
+      "lineContent": "const api_key = \"AIzaSyD-xyz1234567890abcdefghij\";"
+    }
+  ]
+}
